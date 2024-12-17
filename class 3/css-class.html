@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--universal selector-->
+    <style>
+        *{
+            /* universal tag */
+            color:blue;
+            font-style:italic;
+            text-align: center;
+            text-transform:lowercase;
+            background-color: aquamarine;
+        }
+        h2{
+            color: red;
+            font-style: initial;
+            text-align:left;
+            text-transform: capitalize;
+        }
+        h4{
+            color:blueviolet;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        p
+        {
+            color: black;
+        }
+        #he1
+        {
+            color: green;
+            font-style: normal;
+        }
+        .para
+        {
+            font-size: 45px;
+            color:rgb(255, 0, 195);
+        }
+        div > p
+        {
+            color:blue;
+            background-color: brown;
+        }
+        /* Group Selector */
+
+
+        /* decendent selector */
+        div > div > p{
+            color: red;
+            background-color: black ;
+        }
+        /* adjacent sibling selector */
+        h1 + p{
+            color: black;
+           
+        }
+
+        /* general sibling selector */
+        h1 ~ p{
+            color: black;
+            
+        }
+
+
+        /* psuedo class */
+
+        h1:hover
+        {
+            color: red;
+            font-style: normal;
+        }
+        button
+        {
+            padding: 7px 35px;
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 12px;
+            color: whitesmoke;
+        }
+        button:hover
+        {
+            background-color: black;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 60px;
+            color: white;
+            font-style: normal;
+        }
+        a:hover
+        {
+            background-color: yellow;
+        }
+        a:active
+        {
+            color: red;
+        }
+        a:visited
+        {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h1 id="he1">heading 1</h1>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h4 class="para">heading 4</h4>
+    <p class="para">paragraph 1</p>
+    <p>paragraph 2</p>
+    <p class="para">paragraph 3</p>
+    <div>
+        <p>this is the direct child that we will target</p>
+        <div>
+            <p>
+                this is nestedd child of div
+            </p>
+        </div>
+    </div> -->
+
+    <h1>heading 1</h1>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <button>button</button><br><br>
+    <a href="https://www.google.com/" >this is link</a><br><br>
+    <a href="">link 2</a><br><br>
+    <a href="">link 3</a>
+</body>
+</html>
