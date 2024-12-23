@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt
+        {
+            font-size: 20px;
+        }
+        .txt p{
+            font-size: em;
+        }
+        .txt1{
+            font-size: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--em is used to make the text bigger (1em is 16px)
+    em take the font sixe of immediate parent -->
+
+    <p>Paragraph 1</p>
+    <div class="txt">
+        <p>Paragraph 2</p>
+    </div>
+    <div>
+         <!--REM (root em) it will take the refrence
+         from the root element in html-->
+         <p class="txt1">Paragraph 3</p>
+    </div>
+</body>
+</html>
