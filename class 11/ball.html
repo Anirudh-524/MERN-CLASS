@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            height: 450px;
+            width: 343px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .ball
+        {
+            width: 200px;
+            height: 200px;
+            padding: 70px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border: 2px solid rgb(255, 57, 57);
+            animation-name: blink;
+            animation-duration: 2.5s;
+            animation:bounce 1s infinite;
+            animation-direction: normal;
+            background-color: blue;
+            border-radius: 50%;
+            color: aliceblue;
+            
+        }
+        @keyframes bounce {
+
+            0%
+            {
+                transform: translateY(0);
+
+            }
+            25%
+            {
+                background-color: yellowgreen;
+            }
+            50%
+            {
+                transform:translatey(110px);
+                background-color: aqua;
+            }
+            100%
+            {
+                background-color: red;
+            }
+            75%
+            {
+                background-color: yellow;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="ball">
+        <p>jump</p>
+
+    </div>
+    </div>
+    
+</body>
+</html>
